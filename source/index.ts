@@ -35,9 +35,9 @@ async function run(): Promise<void> {
 	text += 'module.exports = {';
 	text += '\n';
 
-	const entries = await Promise.all(Object.keys(SOURCE_ENTITY_ID)
-		.map(async key => {
-			const values = await instancesOfLabels(SOURCE_ENTITY_ID[key]);
+	const entries = await Promise.all(Object.entries(SOURCE_ENTITY_ID)
+		.map(async ([key, entityId]) => {
+			const values = await instancesOfLabels(entityId);
 			const strings = values.map(o => `'${o.replace(/'/, '\\\'')}'`);
 
 			let line = '';
