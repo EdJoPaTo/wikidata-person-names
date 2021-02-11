@@ -2,7 +2,6 @@
 
 [![NPM Version](https://img.shields.io/npm/v/wikidata-person-names.svg)](https://www.npmjs.com/package/wikidata-person-names)
 [![node](https://img.shields.io/node/v/wikidata-person-names.svg)](https://www.npmjs.com/package/wikidata-person-names)
-[![Build Status](https://travis-ci.com/EdJoPaTo/wikidata-person-names.svg?branch=master)](https://travis-ci.com/EdJoPaTo/wikidata-person-names)
 [![Dependency Status](https://david-dm.org/EdJoPaTo/wikidata-person-names/status.svg)](https://david-dm.org/EdJoPaTo/wikidata-person-names)
 [![Dev Dependency Status](https://david-dm.org/EdJoPaTo/wikidata-person-names/dev-status.svg)](https://david-dm.org/EdJoPaTo/wikidata-person-names?type=dev)
 
