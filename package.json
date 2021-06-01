@@ -39,7 +39,7 @@
 	},
 	"type": "commonjs",
 	"engines": {
-		"node": ">=10"
+		"node": ">=12"
 	},
 	"devDependencies": {
 		"@sindresorhus/tsconfig": "^1.0.1",
