@@ -26,7 +26,7 @@ const SOURCE_ENTITY_ID: Readonly<Record<string, string>> = {
 	UNISEX: 'Q3409032',
 	MALE: 'Q12308941',
 	FEMALE: 'Q11879590',
-	FAMILY: 'Q101352'
+	FAMILY: 'Q101352',
 };
 
 async function run(): Promise<void> {
@@ -46,12 +46,12 @@ async function run(): Promise<void> {
 			line += ': [\n';
 			line += '\t\t';
 			line += strings.join(', ');
-			line += '\n\t]';
+			line += ',\n\t],';
 			return line;
-		})
+		}),
 	);
 
-	text += entries.join(',\n');
+	text += entries.join('\n');
 	text += '\n';
 	text += '};';
 	text += '\n';
