@@ -43,7 +43,7 @@
 	},
 	"devDependencies": {
 		"@sindresorhus/tsconfig": "^1.0.1",
-		"@types/node": "^15.0.1",
+		"@types/node": "^16.4.9",
 		"del-cli": "^4.0.0",
 		"typescript": "^4.2.3",
 		"wikidata-sdk-got": "^2.0.1",
