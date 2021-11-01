@@ -45,9 +45,9 @@
 		"@sindresorhus/tsconfig": "^2.0.0",
 		"@types/node": "^16.4.9",
 		"del-cli": "^4.0.0",
-		"typescript": "^4.2.3",
+		"typescript": "~4.3",
 		"wikidata-sdk-got": "^2.0.1",
-		"xo": "^0.44.0"
+		"xo": "^0.46.3"
 	},
 	"files": [
 		"index.*"
@@ -56,6 +56,7 @@
 	"types": "index.d.ts",
 	"xo": {
 		"rules": {
+			"@typescript-eslint/naming-convention": "off",
 			"unicorn/prefer-module": "off",
 			"unicorn/prefer-node-protocol": "off"
 		}
