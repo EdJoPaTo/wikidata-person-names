@@ -45,9 +45,9 @@
 		"@sindresorhus/tsconfig": "^2.0.0",
 		"@types/node": "^16.4.9",
 		"del-cli": "^4.0.0",
-		"typescript": "~4.3",
+		"typescript": "^4.4.4",
 		"wikidata-sdk-got": "^2.0.1",
-		"xo": "^0.46.3"
+		"xo": "^0.46.4"
 	},
 	"files": [
 		"index.*"
