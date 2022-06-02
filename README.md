@@ -2,8 +2,6 @@
 
 [![NPM Version](https://img.shields.io/npm/v/wikidata-person-names.svg)](https://www.npmjs.com/package/wikidata-person-names)
 [![node](https://img.shields.io/node/v/wikidata-person-names.svg)](https://www.npmjs.com/package/wikidata-person-names)
-[![Dependency Status](https://david-dm.org/EdJoPaTo/wikidata-person-names/status.svg)](https://david-dm.org/EdJoPaTo/wikidata-person-names)
-[![Dev Dependency Status](https://david-dm.org/EdJoPaTo/wikidata-person-names/dev-status.svg)](https://david-dm.org/EdJoPaTo/wikidata-person-names?type=dev)
 
 > Set of given and last names pulled from Wikidata
 
@@ -15,15 +13,14 @@ Maintainer Hint: Updating the the file will query different names than before as
 
 ## Install
 
+```bash
+npm install wikidata-person-names
 ```
-$ npm install wikidata-person-names
-```
-
 
 ## Usage
 
 ```js
-const {UNISEX, MALE, FEMALE, FAMILY} = require('wikidata-person-names');
+import { UNISEX, MALE, FEMALE, FAMILY } from 'wikidata-person-names';
 
 UNISEX;
 //=> ['Akira', 'Alba', 'Jody', 'Marie', 'Sacha', …]
