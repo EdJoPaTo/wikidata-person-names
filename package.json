@@ -57,8 +57,7 @@
 	"xo": {
 		"rules": {
 			"@typescript-eslint/naming-convention": "off",
-			"unicorn/prefer-module": "off",
-			"unicorn/prefer-node-protocol": "off"
+			"unicorn/prefer-module": "off"
 		}
 	}
 }

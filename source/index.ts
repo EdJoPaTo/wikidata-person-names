@@ -1,4 +1,4 @@
-import {writeFileSync} from 'fs';
+import {writeFileSync} from 'node:fs';
 
 import {sparqlQuerySimplifiedMinified} from 'wikidata-sdk-got';
 
