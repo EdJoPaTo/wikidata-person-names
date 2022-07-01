@@ -52,8 +52,8 @@
 	"files": [
 		"index.*"
 	],
-	"main": "index.js",
-	"types": "index.d.ts",
+	"main": "./index.js",
+	"types": "./index.d.ts",
 	"xo": {
 		"rules": {
 			"@typescript-eslint/naming-convention": "off",
