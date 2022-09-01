@@ -47,7 +47,7 @@
 		"del-cli": "^5.0.0",
 		"typescript": "^4.4.4",
 		"wikidata-sdk-got": "^2.0.1",
-		"xo": "^0.51.0"
+		"xo": "^0.52.3"
 	},
 	"files": [
 		"index.*"
