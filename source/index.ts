@@ -69,4 +69,5 @@ async function run(): Promise<void> {
 	writeFileSync('index.d.ts', text, 'utf8');
 }
 
+// eslint-disable-next-line unicorn/prefer-top-level-await
 void run();
