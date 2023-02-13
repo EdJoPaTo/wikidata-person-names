@@ -5,11 +5,12 @@
 
 > Set of given and last names pulled from Wikidata
 
-When using random names I needed a list of names.
-Wikidata has a lot of them so I pulled them from there.
-As names don't change that often and are rather static this repo is a snapshot from Wikidata.
+When using random names I needed a list of names. Wikidata has a lot of them, so
+I pulled them from there. As names don't change that often and are rather static
+this repo is a snapshot from Wikidata.
 
-Maintainer Hint: Updating the the file will query different names than before as LIMIT in the SparQL query is non deterministic.
+Maintainer Hint: Updating the file (with `./generate.ts`) will query different
+names than before as LIMIT in the SparQL query is non-deterministic.
 
 ## Install
 
@@ -20,7 +21,7 @@ npm install wikidata-person-names
 ## Usage
 
 ```js
-import { UNISEX, MALE, FEMALE, FAMILY } from 'wikidata-person-names';
+import { FAMILY, UNISEX } from "wikidata-person-names";
 
 UNISEX;
 //=> ['Akira', 'Alba', 'Jody', 'Marie', 'Sacha', …]
@@ -28,6 +29,6 @@ UNISEX;
 FAMILY;
 //=> ['Hein', 'Ling', 'Owen', …]
 
-randomItem(UNISEX)
+randomItem(UNISEX);
 //=> 'Jule'
 ```

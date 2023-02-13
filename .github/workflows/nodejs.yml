@@ -18,11 +18,15 @@ jobs:
           - 18
           - 16
           - 14
+          - 12
+          - 10
+          - 8
+          - 6
     steps:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - uses: actions/checkout@v3
-      - run: npm install
+      # - run: npm install
       - run: npm test
       - run: npm pack

@@ -25,39 +25,34 @@
 		"wikidata"
 	],
 	"license": "MIT",
-	"repository": "EdJoPaTo/wikidata-person-names",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EdJoPaTo/wikidata-person-names"
+	},
 	"author": {
 		"name": "EdJoPaTo",
 		"email": "wikidata-person-names-npm-package@edjopato.de",
 		"url": "https://edjopato.de"
 	},
 	"scripts": {
-		"build": "del-cli dist && tsc",
-		"prepack": "npm run build",
-		"start": "npx tsc && node dist/index.js",
-		"test": "tsc --sourceMap && xo"
+		"start": "./generate.sh",
+		"test": "node node-test.js"
 	},
 	"type": "commonjs",
 	"engines": {
-		"node": ">=14"
-	},
-	"devDependencies": {
-		"@sindresorhus/tsconfig": "^3.0.1",
-		"@types/node": "^14.18.20",
-		"del-cli": "^5.0.0",
-		"typescript": "^4.4.4",
-		"wikidata-sdk-got": "^2.0.1",
-		"xo": "^0.53.0"
+		"node": ">=6"
 	},
 	"files": [
 		"index.*"
 	],
-	"main": "./index.js",
-	"types": "./index.d.ts",
-	"xo": {
-		"rules": {
-			"@typescript-eslint/naming-convention": "off",
-			"unicorn/prefer-module": "off"
+	"main": "./index.cjs",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"deno": "./index.ts",
+			"import": "./index.mjs",
+			"require": "./index.cjs"
 		}
-	}
+	},
+	"types": "./index.d.ts"
 }
