@@ -5,7 +5,7 @@ on:
   pull_request:
   schedule:
     # Check if it works with current dependencies
-    - cron: '42 2 * * 6' # weekly on Saturday 2:42 UTC
+    - cron: "42 2 * * 6" # weekly on Saturday 2:42 UTC
 
 jobs:
   test:
@@ -25,7 +25,7 @@ jobs:
           - 4
           - 0.12
           - 0.11
-          - 0.10
+          - "0.10"
           - 0.9
           - 0.8
     steps:
