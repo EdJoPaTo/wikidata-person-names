@@ -12,16 +12,36 @@ this repo is a snapshot from Wikidata.
 Maintainer Hint: Updating the file (with `update-names.ts`) will query different
 names than before as LIMIT in the SparQL query is non-deterministic.
 
-## Install
+## Usage
+
+### Node.js
 
 ```bash
 npm install wikidata-person-names
 ```
 
-## Usage
-
 ```js
 import { FAMILY, UNISEX } from "wikidata-person-names";
+
+UNISEX;
+//=> ['Akira', 'Alba', 'Jody', 'Marie', 'Sacha', …]
+
+FAMILY;
+//=> ['Hein', 'Ling', 'Owen', …]
+
+randomItem(UNISEX);
+//=> 'Jule'
+```
+
+### Deno
+
+via [ghc.deno.dev](https://github.com/dcdunkan/ghc.deno.dev)
+
+```ts
+import {
+	FAMILY,
+	UNISEX,
+} from "https://ghc.deno.dev/EdJoPaTo/wikidata-person-names/index.ts";
 
 UNISEX;
 //=> ['Akira', 'Alba', 'Jody', 'Marie', 'Sacha', …]
