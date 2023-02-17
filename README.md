@@ -9,7 +9,7 @@ When using random names I needed a list of names. Wikidata has a lot of them, so
 I pulled them from there. As names don't change that often and are rather static
 this repo is a snapshot from Wikidata.
 
-Maintainer Hint: Updating the file (with `./generate.ts`) will query different
+Maintainer Hint: Updating the file (with `update-names.ts`) will query different
 names than before as LIMIT in the SparQL query is non-deterministic.
 
 ## Install
