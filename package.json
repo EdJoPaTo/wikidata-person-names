@@ -38,11 +38,11 @@
 		"build": "./build.sh",
 		"prepack": "npm run build",
 		"update-names": "deno run -A update-names.ts",
-		"test": "node node-test.js"
+		"test": "node node-test.cjs"
 	},
 	"type": "commonjs",
 	"engines": {
-		"node": ">=6"
+		"node": ">=0.8"
 	},
 	"files": [
 		"index.*"
