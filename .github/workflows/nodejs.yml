@@ -23,10 +23,14 @@ jobs:
           - 8
           - 6
     steps:
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - uses: actions/checkout@v3
+      - run: npm run build
       # - run: npm install
       - run: npm test
       - run: npm pack

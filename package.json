@@ -35,7 +35,9 @@
 		"url": "https://edjopato.de"
 	},
 	"scripts": {
-		"start": "./generate.sh",
+		"build": "./build.sh",
+		"prepack": "npm run build",
+		"update-names": "deno run -A update-names.ts",
 		"test": "node node-test.js"
 	},
 	"type": "commonjs",
