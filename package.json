@@ -1,6 +1,6 @@
 {
 	"name": "wikidata-person-names",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "Set of given and last names pulled from Wikidata",
 	"keywords": [
 		"data",
@@ -45,13 +45,13 @@
 		"node": ">=0.8"
 	},
 	"files": [
-		"index.*"
+		"index.*js",
+		"index.d.ts"
 	],
 	"main": "./index.cjs",
 	"exports": {
 		".": {
 			"types": "./index.d.ts",
-			"deno": "./index.ts",
 			"import": "./index.mjs",
 			"require": "./index.cjs"
 		}
