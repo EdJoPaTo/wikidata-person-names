@@ -4,7 +4,6 @@
 	// https://deno.land/manual/advanced/typescript/configuration
 	// https://www.typescriptlang.org/tsconfig/
 	"compilerOptions": {
-		"importsNotUsedAsValues": "error",
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitOverride": true,
 		"noImplicitReturns": true,
@@ -28,8 +27,6 @@
 		}
 	},
 	"fmt": {
-		"options": {
-			"useTabs": true
-		}
+		"useTabs": true
 	}
 }
