@@ -1,4 +1,7 @@
-import { simplify } from "npm:wikibase-sdk@^9";
+import {
+	simplifySparqlResults,
+	type SparqlValueRaw,
+} from "npm:wikibase-sdk@^9";
 import { wdk } from "npm:wikibase-sdk@^9/wikidata.org";
 
 function buildQuery(category: string): string {
@@ -14,7 +17,9 @@ async function sparqlQuerySimplifiedMinified(query: string) {
 	const url = wdk.sparqlQuery(query);
 	const response = await fetch(url);
 	const body = await response.json();
-	const simplified = simplify.sparqlResults(body, { minimize: true });
+	const simplified = simplifySparqlResults(body, {
+		minimize: true,
+	}) as SparqlValueRaw[];
 	return simplified;
 }
 
