@@ -1,3 +1,4 @@
+/** Generated from `Q3409032` */
 export const UNISEX: readonly string[] = [
 	"A-hyeon",
 	"A-in",
@@ -2531,6 +2532,7 @@ export const UNISEX: readonly string[] = [
 	"Zohar",
 	"Zusha",
 ];
+/** Generated from `Q12308941` */
 export const MALE: readonly string[] = [
 	"'Abd al-Majid",
 	"Aad",
@@ -7533,6 +7535,7 @@ export const MALE: readonly string[] = [
 	"Þorri",
 	"Þorvaldur",
 ];
+/** Generated from `Q11879590` */
 export const FEMALE: readonly string[] = [
 	"A'isha",
 	"Aafje",
@@ -12535,6 +12538,7 @@ export const FEMALE: readonly string[] = [
 	"Þurí",
 	"Þuríður",
 ];
+/** Generated from `Q101352` */
 export const FAMILY: readonly string[] = [
 	"A'Beckett",
 	"A'Court",

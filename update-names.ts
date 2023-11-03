@@ -42,6 +42,7 @@ const entries = await Promise.all(
 		const strings = values.map((o) => JSON.stringify(o));
 
 		let line = "";
+		line += `/** Generated from \`${entityId}\` */\n`;
 		line += "export const ";
 		line += key;
 		line += ": readonly string[] = [\n";
