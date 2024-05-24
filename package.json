@@ -27,7 +27,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/EdJoPaTo/wikidata-person-names"
+		"url": "git+https://github.com/EdJoPaTo/wikidata-person-names.git"
 	},
 	"author": {
 		"name": "EdJoPaTo",
