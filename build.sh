@@ -8,7 +8,7 @@ function compile() {
 compile --module commonjs --target es3 index.ts
 mv index.js index.cjs
 
-compile --module es6 --target es6 index.ts
+compile --module es2015 --target es2015 index.ts
 mv index.js index.mjs
 
 deno fmt
