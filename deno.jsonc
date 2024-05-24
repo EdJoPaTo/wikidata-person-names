@@ -14,6 +14,13 @@
 		"noUnusedParameters": true,
 		"useUnknownInCatchVariables": true
 	},
+	"exclude": [
+		"./docs/",
+		"./node_modules/"
+	],
+	"fmt": {
+		"useTabs": true
+	},
 	"lint": {
 		"rules": {
 			// https://lint.deno.land/?all=on
@@ -26,8 +33,5 @@
 				"no-eval"
 			]
 		}
-	},
-	"fmt": {
-		"useTabs": true
 	}
 }
