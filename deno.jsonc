@@ -1,7 +1,7 @@
 {
 	// https://deno.land/manual/getting_started/configuration_file
 	"lock": false,
-	"nodeModulesDir": false,
+	"nodeModulesDir": "none",
 	// https://deno.land/manual/advanced/typescript/configuration
 	// https://www.typescriptlang.org/tsconfig/
 	"compilerOptions": {
@@ -12,6 +12,8 @@
 		"useUnknownInCatchVariables": true
 	},
 	"exclude": [
+		"./coverage/",
+		"./dist/",
 		"./docs/",
 		"./node_modules/"
 	],
@@ -33,5 +35,8 @@
 				"no-sparse-arrays"
 			]
 		}
+	},
+	"tasks": {
+		"doc": "deno doc --html --name=wikidata-person-names index.ts"
 	}
 }
