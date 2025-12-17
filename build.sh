@@ -1,7 +1,7 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 set -eux
 
-function compile() {
+compile() {
 	deno run -A npm:typescript@^4/tsc --declaration "$@"
 }
 
