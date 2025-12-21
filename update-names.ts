@@ -1,8 +1,5 @@
-import {
-	simplifySparqlResults,
-	type SparqlValueRaw,
-} from "npm:wikibase-sdk@^9";
-import { wdk } from "npm:wikibase-sdk@^9/wikidata.org";
+import { simplifySparqlResults, type SparqlValueRaw } from "wikibase-sdk";
+import { wdk } from "wikibase-sdk/wikidata.org";
 
 function buildQuery(category: string): string {
 	return `SELECT DISTINCT ?label WHERE {

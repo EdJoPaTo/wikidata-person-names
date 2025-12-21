@@ -36,6 +36,9 @@
 			]
 		}
 	},
+	"imports": {
+		"wikibase-sdk": "npm:wikibase-sdk@^9"
+	},
 	"tasks": {
 		"doc": "deno doc --html --name=wikidata-person-names index.ts"
 	}
