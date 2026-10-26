@@ -1,3 +1,4 @@
+import { writeFileSync } from "node:fs";
 import { simplifySparqlResults, type SparqlValueRaw } from "wikibase-sdk";
 import { wdk } from "wikibase-sdk/wikidata.org";
 
@@ -55,4 +56,4 @@ const entries = await Promise.all(
 );
 
 const content = entries.join("\n") + "\n";
-await Deno.writeTextFile("index.ts", content);
+writeFileSync("index.ts", content);
