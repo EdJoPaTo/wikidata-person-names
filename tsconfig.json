@@ -1,0 +1,22 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"erasableSyntaxOnly": true,
+		"module": "node16",
+		"moduleDetection": "force",
+		"noEmitOnError": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "dist",
+		"rewriteRelativeImportExtensions": true,
+		"skipLibCheck": true,
+		"target": "es2019", // Node.js 12
+		"types": ["node"],
+		"verbatimModuleSyntax": true
+	}
+}

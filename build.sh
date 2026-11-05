@@ -1,14 +1,11 @@
 #!/usr/bin/env sh
 set -eux
 
-compile() {
-	deno run -A npm:typescript@^4/tsc --declaration "$@"
-}
+./node_modules/.bin/tsc \
+	--declaration \
+	--ignoreConfig \
+	--module es2015 \
+	--target es2015 \
+	index.ts
 
-compile --module commonjs --target es3 index.ts
-mv index.js index.cjs
-
-compile --module es2015 --target es2015 index.ts
-mv index.js index.mjs
-
-deno fmt index.*
+./node_modules/.bin/oxfmt index.js

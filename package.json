@@ -25,36 +25,43 @@
 		"wikidata"
 	],
 	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/EdJoPaTo/wikidata-person-names.git"
-	},
 	"author": {
 		"name": "EdJoPaTo",
 		"email": "wikidata-person-names-npm-package@edjopato.de",
 		"url": "https://edjopato.de"
 	},
-	"scripts": {
-		"build": "./build.sh",
-		"prepack": "npm run build",
-		"update-names": "deno run -A update-names.ts",
-		"test": "node node-test.cjs"
-	},
-	"type": "commonjs",
-	"engines": {
-		"node": ">=0.8"
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/EdJoPaTo/wikidata-person-names.git"
 	},
 	"files": [
 		"index.*js",
 		"index.d.ts"
 	],
-	"main": "./index.cjs",
+	"type": "module",
+	"main": "./index.js",
+	"types": "./index.d.ts",
 	"exports": {
 		".": {
 			"types": "./index.d.ts",
-			"import": "./index.mjs",
-			"require": "./index.cjs"
+			"import": "./index.js"
 		}
 	},
-	"types": "./index.d.ts"
+	"scripts": {
+		"build": "./build.sh",
+		"prepack": "npm run build",
+		"update-names": "node update-names.ts",
+		"test": "tsc && oxlint && oxfmt --check"
+	},
+	"devDependencies": {
+		"@types/node": "^18.19.130",
+		"oxfmt": "^0.76.0",
+		"oxlint": "^1.91.0",
+		"oxlint-tsgolint": "^7.0.2006",
+		"typescript": "^7.0.2",
+		"wikibase-sdk": "^9.2.5"
+	},
+	"engines": {
+		"node": ">=12"
+	}
 }

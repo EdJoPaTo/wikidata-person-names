@@ -1,5 +1,6 @@
 import { writeFileSync } from "node:fs";
-import { simplifySparqlResults, type SparqlValueRaw } from "wikibase-sdk";
+
+import { simplifySparqlResults, type SparqlResults, type SparqlValueRaw } from "wikibase-sdk";
 import { wdk } from "wikibase-sdk/wikidata.org";
 
 function buildQuery(category: string): string {
@@ -14,7 +15,7 @@ LIMIT 5000`;
 async function sparqlQuerySimplifiedMinified(query: string) {
 	const url = wdk.sparqlQuery(query);
 	const response = await fetch(url);
-	const body = await response.json();
+	const body = (await response.json()) as SparqlResults;
 	const simplified = simplifySparqlResults(body, {
 		minimize: true,
 	}) as SparqlValueRaw[];
@@ -24,12 +25,11 @@ async function sparqlQuerySimplifiedMinified(query: string) {
 async function instancesOfLabels(category: string): Promise<string[]> {
 	console.time(`instancesOfLabels ${category}`);
 	const query = buildQuery(category);
-	const results = await sparqlQuerySimplifiedMinified(query) as string[];
-	const sorted = results
+	const results = (await sparqlQuerySimplifiedMinified(query))
+		.filter((o) => typeof o === "string")
 		.sort((a, b) => a.localeCompare(b));
-
 	console.timeEnd(`instancesOfLabels ${category}`);
-	return sorted;
+	return results;
 }
 
 const SOURCE_ENTITY_ID = {
