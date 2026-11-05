@@ -23,7 +23,6 @@
 		"typescript/explicit-module-boundary-types": "error",
 		"typescript/no-import-type-side-effects": "error",
 		"typescript/no-non-null-assertion": "error",
-		"typescript/no-unsafe-type-assertion": "allow",
 		"typescript/prefer-nullish-coalescing": ["error", { "ignorePrimitives": { "string": true } }],
 		"typescript/prefer-readonly-parameter-types": ["error", { "ignoreInferredTypes": true }],
 		"typescript/strict-boolean-expressions": [

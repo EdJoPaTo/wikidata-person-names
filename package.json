@@ -59,7 +59,7 @@
 		"oxlint": "^1.91.0",
 		"oxlint-tsgolint": "^7.0.2006",
 		"typescript": "^7.0.2",
-		"wikibase-sdk": "^9.2.5"
+		"wikibase-sdk": "^11.6.8"
 	},
 	"engines": {
 		"node": ">=12"
