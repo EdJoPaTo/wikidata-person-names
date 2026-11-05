@@ -14,34 +14,12 @@ names than before as LIMIT in the SparQL query is non-deterministic.
 
 ## Usage
 
-### Node.js
-
 ```bash
 npm install wikidata-person-names
 ```
 
-```js
-import { FAMILY, UNISEX } from "wikidata-person-names";
-
-UNISEX;
-//=> ['Akira', 'Alba', 'Jody', 'Marie', 'Sacha', …]
-
-FAMILY;
-//=> ['Hein', 'Ling', 'Owen', …]
-
-randomItem(UNISEX);
-//=> 'Jule'
-```
-
-### Deno
-
-via [ghc.deno.dev](https://github.com/dcdunkan/ghc.deno.dev)
-
 ```ts
-import {
-	FAMILY,
-	UNISEX,
-} from "https://ghc.deno.dev/EdJoPaTo/wikidata-person-names/index.ts";
+import { FAMILY, UNISEX } from "wikidata-person-names";
 
 UNISEX;
 //=> ['Akira', 'Alba', 'Jody', 'Marie', 'Sacha', …]
